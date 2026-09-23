@@ -2,7 +2,7 @@
 
 Production: https://pyronex.web.id
 
-Static product landing page. Serve locally with `python3 -m http.server 4173`. No framework or package installation required.
+Multi-page Indonesian product website for Pyronex. Pages cover the product configuration, pyrolysis process, Pyronex I field applications, laboratory results, and the companies developing the system. Serve locally with `python3 -m http.server 4173`. No framework or package installation is required.
 
 GitHub `temamumtaza/pyronex`, branch `main`, is connected to Vercel project `pyronex` in `temamumtazas-projects`. Pushes to main trigger production deployments.
 
@@ -16,6 +16,6 @@ DNS remains hosted on SumoPod (ns1.sumopod.com / ns2.sumopod.com):
 
 Vercel redirects www to the apex domain with HTTP 308. Domain configuration was verified on 2026-09-23. DNS recommendations can change; consult Vercel before future changes.
 
-SEO work notes and handoff: `SEO-PLAN.md`. Google Search Console does not yet have an authorized property under the Google account currently signed into Brave. IndexNow is configured for the root page; its public verification key is the root `{key}.txt` file.
+SEO research, page intent map, crawler policy, and indexing status: `SEO-PLAN.md`. Search Console ownership and the IndexNow key are configured; indexing is not guaranteed. Sitemap lists all six canonical HTML pages.
 
 Source/claim boundaries and visual decisions: `DESIGN.md`. Verification: `QA.md`.

@@ -1,23 +1,21 @@
 # Verification, 23 September 2026
 
-## Functional and deployment checks
+## Local release checks
 
-- PASS: local static HTTP server and production page loaded in Brave; both published WebP images loaded with nonzero natural dimensions.
-- PASS: every internal destination exists; technology, process, capacity, contact, hero CTA, brand and back-to-top links were clicked and their URL fragments checked.
-- PASS: all four capacity buttons changed title and footprint to the source values (1: 5x5 m, 2: 7x7 m, 4: 5x10 m, 8: 5x20 m).
-- PASS: mobile menu opens, closes after navigation, and closes on Escape with focus returned. Capacity selection also works with Enter.
-- PASS: live WhatsApp capacity link opened the external draft with the correct phone and selected 8 ton/day text. No message sent. Email uses the source-verified mailto address; delivery is handled by the visitor's email application.
-- PASS: observed desktop viewport/scroll width 1633/1633, mobile 433/433, live 351/351 and 390/390. No horizontal document overflow. Earlier 390 override on the local tab measured 433 due browser sizing; production 390 was independently confirmed.
-- PASS: 104 rendered text elements in the mobile DOM were checked against computed ancestor backgrounds. Minimum text contrast 5.26:1; no failures below 4.5:1.
-- PASS: captured browser warning/error logs empty, JavaScript syntax check and Git whitespace checks clean.
-- PASS: production HTTPS page loaded on pyronex.web.id. Vercel reports both apex and www configured correctly, verified, and without conflicts. www responds 308 to https://pyronex.web.id/.
-- PASS: GitHub repository connected to Vercel; source committed to main. Work/source files and environment files are excluded from publication. /.env.local returned HTTP 404.
+- PASS: all six HTML pages have one H1, a unique title, description, canonical URL, and indexable robots metadata.
+- PASS: JSON-LD parses on every page; sitemap XML parses and contains all six canonical URLs.
+- PASS: internal destinations resolve to a local page, every local image exists, and each image has descriptive alt text.
+- PASS: `node --check script.js` and `git diff --check`.
+- PASS: Pyronex product, application, laboratory, and company pages rendered in Brave desktop. Nitikan is identified as sorted organic input on Pyronex I; Tambakboyo as approximate mixed residual input on Pyronex I. No field photographs were supplied or fabricated.
+- PASS: capacity selector tested at 1, 2, and 8 ton/day. Displayed footprints and the WhatsApp draft link updated to the referenced values; the default 4 ton/day state is present in the HTML. No WhatsApp message was sent.
+- PASS: the product FAQ opened and displayed its answer in the browser accessibility tree.
+- PASS: GreenLab chart and table distinguish eight thresholded parameters from the unbounded airflow row; biochar graphic and table reproduce the listed sample data without including report scans.
+- PASS: the accessible UI tree exposes page landmarks, headings, table headers, image descriptions, and labeled navigation.
 
-## Anti-slop delivery gate
+## Boundaries and remaining checks
 
-- Hard gate PASS: no fabricated testimonials, performance numbers or certification claims; numeric capacities and contact details traced to local decks. No em dashes, ghost navigation, inert forms, generic FAQ or new invented logo. Contrast, overflow, image loading and interactive controls checked as above. Static document has no fetched data or remote loading/empty/error states to simulate.
-- Purpose gate PASS: typography and green/paper palette follow the requested reference. Mono labels denote technical sections, lines separate content, outbound/scroll arrows communicate action. No gradients, glows, floating panels, decorative icons, background grids, or gratuitous animation.
-- Liveliness PASS: ENERGY 2 / RHYTHM 3 / MOTION 1 declared before implementation. Machine image and large headline form the hero focal points; the full-width process diagram, editorial rows and capacity selector create distinct section compositions. Mint emphasis and repeated engineering labels establish identity.
-- Craftsmanship PASS: source-derived imagery and content; real capacity behavior; visible keyboard focus; reduced-motion support; restrained palette and no template testimonial/pricing blocks. The responsive page and production route were inspected directly.
-
-External WhatsApp/email sending, site-specific machine performance, product certification and commercial outcomes are not claimed as tested by this website QA.
+- Responsive breakpoints are implemented for desktop, tablet, and narrow screens. A specific phone-sized browser viewport was not independently simulated in this release check.
+- Production deployment, live clean-URL routing, and the updated sitemap/robots response must be checked after the main-branch push.
+- Search Console indexing status may take time to update. Sitemap processing and crawl requests are discovery signals, not confirmation of indexing or ranking.
+- Field photos and any substantiation for the requested nationwide “first” claim were not supplied. The unverified first claim is omitted.
+- Laboratory scans are not republished; the website asks readers to obtain the report through the companies if they need the full document.

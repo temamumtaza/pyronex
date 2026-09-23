@@ -3,11 +3,13 @@ const nav = document.querySelector('#nav');
 function closeMenu(returnFocus = false) {
   nav.classList.remove('open');
   menu.setAttribute('aria-expanded', 'false');
+  menu.querySelector('span').textContent = '+';
   if (returnFocus) menu.focus();
 }
 menu.addEventListener('click', () => {
   const open = menu.getAttribute('aria-expanded') !== 'true';
   menu.setAttribute('aria-expanded', String(open));
+  menu.querySelector('span').textContent = open ? '−' : '+';
   nav.classList.toggle('open', open);
 });
 nav.addEventListener('click', event => { if (event.target.closest('a')) closeMenu(); });
