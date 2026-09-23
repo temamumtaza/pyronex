@@ -21,6 +21,6 @@ document.querySelectorAll('[data-capacity]').forEach(button => {
     document.querySelectorAll('[data-capacity]').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
     document.querySelector('#capacity-title').textContent = `${capacity} ton per hari`;
     document.querySelector('#capacity-area').textContent = areas[capacity];
-    document.querySelector('#capacity-cta').href = `https://wa.me/6281236440576?text=${encodeURIComponent(`Halo Kibar, saya ingin diskusi Pyronex kapasitas ${capacity} ton/hari.`)}`;
+    document.querySelector('#capacity-cta').href = `https://wa.me/6281236440576?text=${encodeURIComponent(`Halo, saya ingin membahas kapasitas Pyronex ${capacity} ton per hari.`)}`;
   });
 });
