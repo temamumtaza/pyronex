@@ -1,6 +1,6 @@
 # SEO and AI discovery
 
-Updated 23 September 2026. This project has a single Indonesian product page; keyword targets describe its actual equipment and supported uses. Search query results observed during research did not associate the new domain with Pyronex yet. No search-volume estimate or ranking promise is made.
+Updated 23 September 2026. This project has a single Indonesian product page; keyword targets describe its actual equipment and supported uses. The live search snapshot returned no result for `site:pyronex.web.id` or the exact Pyronex phrase. Public research did not provide defensible search-volume estimates, so none are invented and no ranking promise is made.
 
 ## Search-intent map
 
@@ -11,7 +11,7 @@ Updated 23 September 2026. This project has a single Indonesian product page; ke
 | Commercial, product | Pyronex II; mesin Pyronex | Product entity, sections, source-derived imagery |
 | Technical research | cara kerja mesin pirolisis sampah; kapasitas mesin pirolisis; keluaran biochar pirolisis | Process description, capacities, output copy, FAQ |
 
-Google/Bing volumes, trends, paid auction competition, and query-level rankings were unavailable in the public research snapshot. These are hypotheses grounded in the requested primary phrase and the existing product specification; review them using real Search Console/Bing query data after verification.
+Google/Bing volumes, trends, paid auction competition, and query-level rankings were unavailable in the public research snapshot. Generic results for "mesin pirolisis sampah" mix plastic-to-fuel equipment with broader waste systems, so Pyronex copy distinguishes the integrated line and qualifying organic feedstock from out-of-spec fractions. These are hypotheses grounded in the requested primary phrase and existing product specification; review them using real Search Console/Bing query data after verification.
 
 ## Changes shipped
 
@@ -19,7 +19,7 @@ Google/Bing volumes, trends, paid auction competition, and query-level rankings 
 - Added a visible process explanation and five buyer/technical questions. Input limits, product testing, capacity assumptions, installation, and commissioning are explicit; no sales price, output guarantee, customer quote, certification, or result was invented.
 - Added JSON-LD entities for WebSite, WebPage, Organization, and the Pyronex II Product. There is no offer, price, rating, or inventory claim because the source does not provide a public ecommerce offer. Product rich-result eligibility is therefore not promised.
 - Added image locations and descriptive titles to the sitemap; the XML includes only the canonical page and its two product images.
-- Published a root IndexNow key and notified IndexNow of the canonical page. An accepted response means the URL was received, not that any engine indexed or ranked it.
+- Published a root IndexNow key and notified IndexNow of the canonical page; the live endpoint returned HTTP 202 Accepted, meaning the URL was received while key validation was pending. This is not evidence that any engine indexed or ranked it.
 - `robots.txt` explicitly allows Googlebot, Bingbot, OAI-SearchBot, ChatGPT-User, Claude-SearchBot, Claude-User, PerplexityBot, and Perplexity-User. GPTBot and ClaudeBot are disallowed as training crawlers; search and user-requested retrieval remain allowed. The wildcard also leaves Google-Extended available for Gemini grounding; Google documents it as independent from Google Search indexing.
 - Kept the existing canonical HTTPS apex URL, single-page hierarchy, and static indexable HTML. No extra doorway pages, generated `llms.txt`, keyword lists, fake reviews, or city pages were added.
 
