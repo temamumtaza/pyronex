@@ -1,0 +1,8 @@
+.git
+.env*
+.vercel
+work
+node_modules
+DESIGN.md
+QA.md
+README.md
