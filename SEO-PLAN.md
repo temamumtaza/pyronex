@@ -23,11 +23,11 @@ Google/Bing volumes, trends, paid auction competition, and query-level rankings 
 - `robots.txt` explicitly allows Googlebot, Bingbot, OAI-SearchBot, ChatGPT-User, Claude-SearchBot, Claude-User, PerplexityBot, and Perplexity-User. GPTBot and ClaudeBot are disallowed as training crawlers; search and user-requested retrieval remain allowed. The wildcard also leaves Google-Extended available for Gemini grounding; Google documents it as independent from Google Search indexing.
 - Kept the existing canonical HTTPS apex URL, single-page hierarchy, and static indexable HTML. No extra doorway pages, generated `llms.txt`, keyword lists, fake reviews, or city pages were added.
 
-## Search Console gate and monitoring
+## Search Console verification and monitoring
 
-On 23 September 2026, Search Console was opened for `sc-domain:pyronex.web.id` while logged in as `reizants17@gmail.com`. Google reported that this account does not have access and offered ownership verification. Completing the DNS verification token would add this Google account as an owner and let it view/manage Search Console data for the entire domain. Do not publish that token until the site owner confirms this exact account and grant.
+On 23 September 2026, domain ownership for `sc-domain:pyronex.web.id` was verified in Search Console under `reizants17@gmail.com` using a TXT record at the root of the SumoPod DNS zone. Keep that DNS verification record in place to retain ownership verification.
 
-After owner verification, submit `https://pyronex.web.id/sitemap.xml`, inspect the canonical URL, and request indexing. Track impressions and queries for the intent groups above. Google says indexing and serving are not guaranteed, including after these steps.
+Submitted `https://pyronex.web.id/sitemap.xml`; Search Console processed it successfully and found one page. URL Inspection initially reported the homepage as unknown to Google. The live URL test then reported it available and indexable, with no enhancement issues after removing incomplete Product rich-result markup. A request to index `https://pyronex.web.id/` was accepted into Google's priority crawl queue. This does not confirm the page is already indexed or guarantee when/if it will appear. Monitor URL Inspection, the Page Indexing report, and query impressions in Search Console as Google processes the request.
 
 ## Authority guidance used
 
