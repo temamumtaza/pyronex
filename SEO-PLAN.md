@@ -21,7 +21,7 @@ Google/Bing volumes, trends, paid auction competition, and query-level rankings 
 - JSON-LD describes WebSite, WebPage, Organization, BreadcrumbList, and general Thing entities. Product rich-result markup is omitted because source material does not provide offer, price, review, or rating data.
 - `sitemap.xml` lists all six canonical pages and the actual product/process illustrations. Custom CSS charts visualize lab data; scans of lab report pages are not reproduced.
 - `robots.txt` allows Googlebot, Bingbot, OAI-SearchBot, ChatGPT-User, Claude-SearchBot, Claude-User, GPTBot, ClaudeBot, Google-Extended, PerplexityBot, and Perplexity-User. The user explicitly authorized training crawlers. Search and training crawler controls remain separate where the platform defines them separately.
-- IndexNow previously accepted the canonical homepage URL (HTTP 200); this update must submit the six canonical URLs after production deploy. A successful submission means discovery notification, not indexing or ranking.
+- IndexNow accepted all six canonical URLs after deployment (HTTP 200); the root verification file is publicly served and matched the configured key. A successful submission means discovery notification, not indexing or ranking.
 - Keep useful, accessible HTML as the source of truth for search and AI retrieval. `llms.txt`, keyword stuffing, doorway pages, fake reviews, and unsupported first-in-Indonesia claims are omitted.
 
 ## Claim boundary
@@ -32,7 +32,7 @@ The requested absolute claim that Pyronex is the first Indonesian producer/produ
 
 On 23 September 2026, domain ownership for `sc-domain:pyronex.web.id` was verified in Search Console under `reizants17@gmail.com` using a TXT record at the root of the SumoPod DNS zone. Keep that DNS verification record in place to retain ownership verification.
 
-Before this multi-page release, Search Console processed the sitemap and found the original homepage. URL Inspection reported the homepage available and indexable, with no enhancement issues after removing incomplete Product rich-result markup. A request to index `https://pyronex.web.id/` was accepted into Google's priority crawl queue. After the multi-page production deployment, resubmit the sitemap and request inspection for important new URLs. These signals do not confirm indexing or guarantee when/if pages will appear. Monitor URL Inspection, the Page Indexing report, and query impressions.
+Before this multi-page release, URL Inspection reported the homepage available and indexable, with no enhancement issues after removing incomplete Product rich-result markup. On 23 September 2026 after deployment, Search Console processed `https://pyronex.web.id/sitemap.xml` successfully and reported six discovered pages. IndexNow accepted all six page URLs. URL Inspection showed the homepage as indexed. Each of the five child URLs initially showed “Ditemukan - saat ini tidak diindeks”; priority crawl requests for all six URLs were then accepted. This is evidence of successful submission and the homepage's indexed status, not proof that the five child pages are already indexed or that any page ranks for a target phrase. Continue checking URL Inspection, the Page Indexing report, and query impressions.
 
 ## Authority guidance used
 
