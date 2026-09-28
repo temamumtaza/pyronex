@@ -71,6 +71,48 @@
   .regulation-note>div{display:block}.regulation-note>div strong{margin-top:8px}.page-hero .eyebrow{font-size:9px}.page-hero h1{font-size:clamp(45px,12vw,64px)}
 }
 
+/* Home copy supplied by the editor. */
+.nav-separator{color:var(--muted);font-size:12px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero .hero-actions .button{margin-top:0}
+.hero .button-secondary{background:transparent;color:var(--paper);border:1px solid #6c8a75}
+.hero .button-secondary:hover{background:#28543d}
+.hero-note.editor-hero-note{display:block;margin-top:25px;border:0;padding:0;color:#d1e0d3}
+.hero-note.editor-hero-note em{color:#d1e0d3}
+.editor-copy{max-width:680px}
+.editor-copy>p:not(.large-text){color:var(--muted);margin-top:28px}
+.editor-list{margin:30px 0 0;padding-left:1.35rem}
+.editor-list li+li{margin-top:18px}
+.editor-process-section>.section-heading h2{grid-column:1/-1}
+.editor-process-list{margin-top:45px}
+.editor-process-list>li{align-items:flex-start}
+.editor-process-list>li>div{min-width:0}
+.editor-process-list h3{font-size:22px}
+.editor-bullets{margin:18px 0 0;padding-left:1.25rem;color:var(--muted);font-size:13px}
+.editor-bullets li+li{margin-top:14px}
+.editor-process-list .editor-bullets li{display:list-item;border:0;padding:0;gap:0}
+.editor-process-list .editor-bullets strong,.editor-copy strong{color:var(--ink)}
+.editor-process-list .editor-bullets em,.editor-copy em{color:var(--ink)}
+.editor-field-section .section-heading>p:last-child{max-width:520px}
+.field-copy p:not(.eyebrow){font-size:13px;color:var(--muted);margin-top:10px}
+.field-copy strong{color:var(--ink)}
+.editor-evidence-section .editor-bullets{margin-top:24px}
+.editor-note{font-size:12px;color:var(--muted);margin-top:25px}
+.editor-note em{color:var(--muted)}
+.editor-note a{color:var(--green)}
+.editor-contact-section .contact-details>p+p{margin-top:20px}
+.editor-contact-section .editor-bullets{color:#d1e0d3}
+.editor-contact-section .button{margin-top:30px}
+.site-footer nav span{font-size:11px;color:var(--muted);padding:12px 0}
+.flow-diagram{margin:38px 0 0;padding:25px 28px;background:#102f22;color:var(--paper);font:12px/1.7 var(--mono);overflow-x:auto;white-space:pre;border-radius:2px}
+.home-flow-copy{max-width:1000px}
+.home-flow-steps{margin-top:36px}
+.home-environment{margin-top:30px}
+.home-claims{margin-top:28px}
+@media(max-width:1050px){.nav-separator{display:none}}
+@media(max-width:800px){.editor-process-list{grid-template-columns:1fr}.editor-process-list>li{gap:18px}.editor-copy{max-width:none}}
+@media(max-width:560px){.hero-actions{display:grid}.hero-actions .button{width:100%}.site-footer nav span{padding:8px 0}.flow-diagram{font-size:10px;padding:18px}}
+
 
 /* Branching process map with crisp vector nodes and a deliberate one-pass material journey. */
 .process-map{scroll-margin-top:105px;margin-top:40px;padding:30px 28px 24px;background:#102f22;background-image:linear-gradient(110deg,rgba(16,47,34,.92),rgba(16,47,34,.82)),url('/assets/reactor.webp');background-position:center 46%;background-size:cover;color:var(--paper);overflow:hidden}
