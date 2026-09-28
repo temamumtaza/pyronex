@@ -104,14 +104,13 @@
 .editor-contact-section .editor-bullets{color:#d1e0d3}
 .editor-contact-section .button{margin-top:30px}
 .site-footer nav span{font-size:11px;color:var(--muted);padding:12px 0}
-.flow-diagram{margin:38px 0 0;padding:25px 28px;background:#102f22;color:var(--paper);font:12px/1.7 var(--mono);overflow-x:auto;white-space:pre;border-radius:2px}
 .home-flow-copy{max-width:1000px}
 .home-flow-steps{margin-top:36px}
 .home-environment{margin-top:30px}
 .home-claims{margin-top:28px}
 @media(max-width:1050px){.nav-separator{display:none}}
 @media(max-width:800px){.editor-process-list{grid-template-columns:1fr}.editor-process-list>li{gap:18px}.editor-copy{max-width:none}}
-@media(max-width:560px){.hero-actions{display:grid}.hero-actions .button{width:100%}.site-footer nav span{padding:8px 0}.flow-diagram{font-size:10px;padding:18px}}
+@media(max-width:560px){.hero-actions{display:grid}.hero-actions .button{width:100%}.site-footer nav span{padding:8px 0}}
 
 
 /* Branching process map with crisp vector nodes and a deliberate one-pass material journey. */
