@@ -1,3 +1,26 @@
+const trackEvent = (name, params = {}) => {
+  const detail = { event: name, ...params };
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push(detail);
+  document.dispatchEvent(new CustomEvent('pyronex:analytics', { detail }));
+};
+
+const eventForLink = link => {
+  if (link.dataset.analyticsEvent) return link.dataset.analyticsEvent;
+  if (link.matches('a[href^="https://wa.me/"]')) return 'whatsapp_click';
+  if (link.getAttribute('href') === '#konsultasi') return 'seo_consultation_click';
+  if (link.id === 'capacity-cta') return 'site_survey_request';
+  if (link.getAttribute('href')?.includes('/hasil-uji')) return 'lab_report_view';
+  return null;
+};
+
+document.addEventListener('click', event => {
+  const link = event.target.closest('a');
+  if (!link) return;
+  const name = eventForLink(link);
+  if (name) trackEvent(name, { path: link.getAttribute('href') || '' });
+});
+
 const menu = document.querySelector('.menu');
 const nav = document.querySelector('#nav');
 // Commercial pricing remains off the public site until the business team enables it.
@@ -47,11 +70,18 @@ document.querySelectorAll('[data-lead-form]').forEach(form => {
       values.name && `Nama: ${values.name}`,
       values.organization && `Organisasi: ${values.organization}`,
       values.phone && `Kontak: ${values.phone}`,
+      values.email && `Email: ${values.email}`,
       values.location && `Lokasi: ${values.location}`,
       values.facility && `Jenis fasilitas: ${values.facility}`,
       values.volume && `Volume: ${values.volume}`,
+      values.organic_fraction && `Perkiraan fraksi organik: ${values.organic_fraction}`,
       values.message && `Catatan: ${values.message}`,
     ].filter(Boolean);
+    trackEvent('contact_submit', {
+      has_email: Boolean(values.email),
+      has_volume: Boolean(values.volume),
+      facility: values.facility || 'belum_diisi',
+    });
     window.open(`https://wa.me/6281236440576?text=${encodeURIComponent(lines.join('\n'))}`, '_blank', 'noopener');
   });
 });
@@ -61,14 +91,21 @@ document.querySelectorAll('[data-capacity-calculator]').forEach(calculator => {
   const hours = calculator.querySelector('[name="operating-hours"]');
   const output = calculator.querySelector('[data-capacity-result]');
   if (!daily || !hours || !output) return;
+  let tracked = false;
   const update = () => {
     const tonnage = Number(daily.value);
     const operatingHours = Number(hours.value);
     if (!tonnage || !operatingHours || tonnage < 0 || operatingHours <= 0) {
       output.textContent = 'Masukkan volume harian dan jam operasi untuk melihat perkiraan awal.';
+      tracked = false;
       return;
     }
-    output.textContent = `Perkiraan laju rata-rata: ${(tonnage / operatingHours).toFixed(2)} ton/jam. Ini bukan penentuan ukuran akhir; konfigurasi perlu karakterisasi umpan dan survei rekayasa.`;
+    const rate = tonnage / operatingHours;
+    output.textContent = `Perkiraan laju rata-rata: ${rate.toFixed(2)} ton/jam. Ini bukan penentuan ukuran akhir; konfigurasi perlu karakterisasi umpan dan survei rekayasa.`;
+    if (!tracked) {
+      trackEvent('capacity_calculator_completed', { daily_tonnage: tonnage, operating_hours: operatingHours, average_rate: Number(rate.toFixed(2)) });
+      tracked = true;
+    }
   };
   daily.addEventListener('input', update);
   hours.addEventListener('input', update);

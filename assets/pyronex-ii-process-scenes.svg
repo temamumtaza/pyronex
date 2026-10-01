@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" viewBox="0 0 220 100">
+  <symbol id="scene-intake" viewBox="0 0 220 100">
+    <rect width="220" height="100" fill="#f0f2ec"/><path d="M13 78h194" stroke="#b7c2b5" stroke-width="2"/>
+    <path d="M23 62h174l-13 17H36z" fill="#55655b"/><path d="M32 64h154" stroke="#d7dfd5" stroke-width="2" stroke-dasharray="5 5"/>
+    <path d="M42 58l9-18 10 3 4 15z" fill="#b4c7a5"/><path d="M52 48q-9-13 1-18 13 5 8 16l-3 11z" fill="#8aaf73"/><path d="M72 58l7-21 15 5-1 16z" fill="#c16b42"/><path d="M80 38q9-12 18-1l-4 6-15-1z" fill="#5b7b4e"/>
+    <path d="M105 58V40q0-5 5-5h7q5 0 5 5v18z" fill="#7395a0"/><path d="M108 41h11m-10-7h8" stroke="#d8e4e2" stroke-width="2"/><path d="M134 58V43q0-4 4-4h8q4 0 4 4v15z" fill="#bd9458"/><path d="M138 45h8m-9 5h10" stroke="#e8d3a9" stroke-width="2"/>
+    <path d="M162 57l5-18h16l4 18z" fill="#d5d2c3" stroke="#87938a" stroke-width="2"/><path d="M168 42h13m-12 5h12" stroke="#a2aaa1" stroke-width="2"/>
+    <circle cx="41" cy="63" r="3" fill="#e2aa4e"/><circle cx="96" cy="62" r="3" fill="#526f49"/><circle cx="126" cy="61" r="3" fill="#b9c5b9"/>
+  </symbol>
+  <symbol id="scene-conveyor" viewBox="0 0 220 100">
+    <rect width="220" height="100" fill="#f0f2ec"/><path d="M20 67h176l-10 13H30z" fill="#31483a"/><path d="M27 68h162" stroke="#a9d4b5" stroke-width="2" stroke-dasharray="7 6"/><path d="M42 80v11m131-11v11" stroke="#7d8a7e" stroke-width="4"/><circle cx="35" cy="71" r="5" fill="#849086"/><circle cx="186" cy="71" r="5" fill="#849086"/>
+    <path d="M42 62V42h10v20m110 0V42h10v20" fill="#87938a"/><path d="M36 39h143v5H36z" fill="#42664b"/><rect x="88" y="20" width="34" height="18" rx="2" fill="#244734"/><path d="M92 25h26m-26 5h26" stroke="#a9d4b5" stroke-width="2"/><path d="M105 38v9" stroke="#244734" stroke-width="3"/><path d="M70 59l5-8 8 3-3 7zm64-1 4-10 8 3-2 8z" fill="#bf7436"/><circle cx="105" cy="58" r="4" fill="#98aa87"/>
+  </symbol>
+  <symbol id="scene-screen" viewBox="0 0 220 100">
+    <rect width="220" height="100" fill="#f0f2ec"/><path d="M34 21h150l-18 29H52z" fill="#d2d9d0" stroke="#56695c" stroke-width="3"/><path d="M54 27h115M60 34h105M67 41h91" stroke="#7f8f81" stroke-width="2" stroke-dasharray="5 4"/><path d="M48 51v28m119-29v28M57 79h100" stroke="#56695c" stroke-width="4"/><circle cx="73" cy="58" r="4" fill="#be7246"/><circle cx="94" cy="57" r="4" fill="#849874"/><circle cx="117" cy="59" r="4" fill="#c99e54"/><path d="M133 56l5-6 7 4-3 7z" fill="#8aa6a7"/><path d="M74 69l7-6 7 7-7 5zm43 2 6-6 8 5-5 7z" fill="#607461"/><path d="M27 19v17h18M184 19v17h-17" fill="none" stroke="#42664b" stroke-width="3"/><rect x="93" y="13" width="30" height="8" rx="2" fill="#a9d4b5"/>
+  </symbol>
+  <symbol id="scene-organic" viewBox="0 0 220 100">
+    <rect width="220" height="100" fill="#f0f2ec"/><path d="M24 75h172" stroke="#c5cec3" stroke-width="2"/>
+    <path d="M42 71q4-28 29-20 12 11-1 22z" fill="#d89f4d"/><path d="M49 53q-9-13 3-18 13 3 11 16" fill="#829969"/><path d="M84 70q0-26 20-25 16 5 11 25z" fill="#c06d45"/><path d="M96 47q2-11 11-11" fill="none" stroke="#567449" stroke-width="3"/><path d="M126 69q13-23 31-12 8 10-6 16z" fill="#708c5a"/><path d="M141 60q5-15 19-14-3 13-18 16" fill="#9bb576"/><path d="M162 72q8-16 23-8l-3 10z" fill="#e1bd77"/><path d="M177 63q-4-10 4-13 9 2 6 12" fill="#697e51"/><circle cx="73" cy="76" r="3" fill="#b97844"/><circle cx="114" cy="78" r="4" fill="#829765"/><circle cx="151" cy="78" r="3" fill="#bf7546"/>
+  </symbol>
+  <symbol id="scene-feeder" viewBox="0 0 220 100">
+    <rect width="220" height="100" fill="#f0f2ec"/><path d="M36 18h72l-13 26H49z" fill="#7e8b80" stroke="#46584b" stroke-width="3"/><path d="M54 44h37l-10 18H64z" fill="#b6c0b5"/><path d="M58 63h124l-9 12H65z" fill="#2f4939"/><path d="M68 64h103" stroke="#a9d4b5" stroke-width="2" stroke-dasharray="6 5"/><path d="M73 75v12m96-12v12" stroke="#718174" stroke-width="4"/><circle cx="63" cy="69" r="4" fill="#849086"/><circle cx="175" cy="69" r="4" fill="#849086"/><path d="M117 52q5-7 10 0l-5 6zm17 0q5-7 10 0l-5 6z" fill="#849968"/><path d="M121 24h28" stroke="#a9d4b5" stroke-width="3"/><path d="M153 20l8 4-8 4" fill="none" stroke="#a9d4b5" stroke-width="3"/>
+  </symbol>
+  <symbol id="scene-shredder" viewBox="0 0 220 100">
+    <rect width="220" height="100" fill="#f0f2ec"/><path d="M54 16h112l-17 27H71z" fill="#7f8c81" stroke="#43574a" stroke-width="3"/><path d="M71 44h78v18H71z" fill="#2b4335"/><circle cx="91" cy="53" r="9" fill="#a9d4b5"/><circle cx="111" cy="53" r="9" fill="#879b80"/><circle cx="131" cy="53" r="9" fill="#a9d4b5"/><path d="M88 47l6 12m11-12 5 12m15-12 4 12" stroke="#344b39" stroke-width="2"/><path d="M77 63v18m66-18v18M69 81h82" stroke="#55665a" stroke-width="4"/><path d="M85 69l5 6m10-6-4 8m17-8 4 6m11-6-5 8m17-7 5 7" stroke="#bf7436" stroke-width="3"/><path d="M166 52h23v8h-23" fill="#bac4b9"/><path d="M177 61v15" stroke="#7d8a7e" stroke-width="3"/>
+  </symbol>
+  <symbol id="scene-reactor" viewBox="0 0 220 100">
+    <rect width="220" height="100" fill="#f0f2ec"/><path d="M79 29q0-10 13-10h35q13 0 13 10v46q0 9-13 9H92q-13 0-13-9z" fill="#8a9790" stroke="#394d40" stroke-width="3"/><ellipse cx="109" cy="29" rx="30" ry="8" fill="#c2cbc3" stroke="#394d40" stroke-width="3"/><path d="M82 55h58m-56 8h54m-50 8h46" stroke="#bf7436" stroke-width="3"/><path d="M92 19V10h35v9" fill="none" stroke="#566a5b" stroke-width="4"/><path d="M124 10h32q8 0 8 8v8" fill="none" stroke="#566a5b" stroke-width="4"/><path d="M164 26v16h19v-9" fill="none" stroke="#829388" stroke-width="4"/><path d="M91 84v8m37-8v8m-45 0h54" stroke="#566a5b" stroke-width="3"/><circle cx="148" cy="54" r="4" fill="#a9d4b5"/><path d="M69 45h10m-10 12h10" stroke="#65766a" stroke-width="3"/>
+  </symbol>
+  <symbol id="scene-biochar" viewBox="0 0 220 100">
+    <rect width="220" height="100" fill="#f0f2ec"/><path d="M38 65h145q-7 20-21 20H60q-15 0-22-20z" fill="#c9d1c7" stroke="#6d7c70" stroke-width="3"/><path d="M57 66q9-16 26-12 10-20 28-11 13-19 29-5 17-10 29 4 7 10 1 24z" fill="#26362e"/><g fill="#101f18"><circle cx="70" cy="59" r="4"/><circle cx="88" cy="53" r="3"/><circle cx="103" cy="61" r="4"/><circle cx="121" cy="48" r="3"/><circle cx="136" cy="59" r="4"/><circle cx="153" cy="52" r="3"/><circle cx="167" cy="61" r="4"/></g><path d="M49 87h123" stroke="#b7c2b5" stroke-width="2"/><path d="M83 33l5-8m23 3 4-8m27 10 5-8" stroke="#bf7436" stroke-width="2" opacity=".75"/>
+  </symbol>
+  <symbol id="scene-inorganic" viewBox="0 0 220 100">
+    <rect width="220" height="100" fill="#f0f2ec"/><path d="M27 78h166" stroke="#c1cbc0" stroke-width="2"/><path d="M48 69V36q0-7 7-7h12q7 0 7 7v33z" fill="#8cabb0" stroke="#526a6a" stroke-width="2"/><path d="M54 29v-7h13v7m-19 17h26" fill="none" stroke="#526a6a" stroke-width="3"/><path d="M91 69V44q0-5 5-5h19q5 0 5 5v25z" fill="#c1c5bd" stroke="#737f76" stroke-width="2"/><path d="M95 49h21m-18 7h15" stroke="#849086" stroke-width="2"/><path d="M140 68l5-38h30l5 38z" fill="#d4c9a8" stroke="#827d67" stroke-width="2"/><path d="M146 39h28m-27 7h27m-28 7h28m-29 7h29" stroke="#a29a80" stroke-width="2"/><path d="M36 70l5-11 6 3-4 10z" fill="#a9d4b5"/><circle cx="188" cy="67" r="6" fill="#bd7246"/><path d="M186 61v-6h4v6" stroke="#8b5536" stroke-width="2"/>
+  </symbol>
+  <symbol id="scene-collection" viewBox="0 0 220 100">
+    <rect width="220" height="100" fill="#f0f2ec"/><path d="M43 28h134l-9 59H52z" fill="#b7c2b8" stroke="#65766a" stroke-width="3"/><path d="M38 25h144v8H38z" fill="#42664b"/><path d="M59 48l8-12 13 3 2 19H61z" fill="#8caab0"/><path d="M64 42v-8h8v8" fill="none" stroke="#526a6a" stroke-width="2"/><path d="M92 57V41q0-4 4-4h12q4 0 4 4v16z" fill="#c6c9c1"/><path d="M96 45h12m-12 6h12" stroke="#879188" stroke-width="2"/><path d="M125 56l6-21h23l5 21z" fill="#d7cba7"/><path d="M131 41h21m-22 6h22" stroke="#9e967c" stroke-width="2"/><path d="M79 68l8-7 9 8-5 10z" fill="#bd7246"/><path d="M115 71l7-12 11 3-1 17z" fill="#7b956c"/><path d="M165 41h11" stroke="#dce5db" stroke-width="2"/>
+  </symbol>
+  <symbol id="scene-rdf-shred" viewBox="0 0 220 100">
+    <rect width="220" height="100" fill="#f0f2ec"/><path d="M39 23h80l-12 20H51z" fill="#87938a" stroke="#48594e" stroke-width="3"/><path d="M50 44h57v16H50z" fill="#334a3a"/><circle cx="67" cy="52" r="7" fill="#8aa6a7"/><circle cx="85" cy="52" r="7" fill="#a9d4b5"/><path d="M59 48l5 8m17-8 5 8" stroke="#3a5140" stroke-width="2"/><path d="M57 61v16m44-16v16M52 77h55" stroke="#68786d" stroke-width="3"/><path d="M124 62h55q-4 19-13 19h-30q-8 0-12-19z" fill="#c2cbc0" stroke="#728075" stroke-width="2"/><path d="M134 62l7-7 7 6 7-9 7 9 8-5 6 8z" fill="#81966e"/><path d="M136 69l7-5 7 8 8-8 8 6 8-4" fill="none" stroke="#bf7436" stroke-width="3"/><circle cx="145" cy="57" r="2" fill="#586d50"/><circle cx="166" cy="55" r="3" fill="#bd7246"/>
+  </symbol>
+  <symbol id="scene-rdf" viewBox="0 0 220 100">
+    <rect width="220" height="100" fill="#f0f2ec"/><path d="M29 77h163" stroke="#c0cac0" stroke-width="2"/><path d="M42 72q11-12 25-9 8-17 24-13 11-11 25-3 13-13 28-4 12-5 23 6l7 23H47z" fill="#7d9170"/><g fill="#bd7246"><path d="M56 67l8-8 7 7-7 7z"/><path d="M90 52l8-6 7 8-8 5z"/><path d="M132 67l7-8 9 6-6 8z"/></g><g fill="#a7b9a6"><path d="M76 70l6-11 8 4-4 10z"/><path d="M112 71l8-9 7 6-7 7z"/><path d="M157 57l7-7 8 7-7 6z"/></g><path d="M73 83h80" stroke="#435a48" stroke-width="3"/><text x="183" y="31" text-anchor="middle" fill="#42664b" font-family="monospace" font-size="10" font-weight="700">RDF</text><path d="M172 38h23" stroke="#a9d4b5" stroke-width="2"/>
+  </symbol>
+  <symbol id="payload-mixed" viewBox="0 0 60 42">
+    <path d="M3 22q5-14 16-11 5 9-3 18-10 4-13-7z" fill="#8aaa70" stroke="#334c37" stroke-width="1.4"/><path d="M13 13q7-9 12-2-3 6-10 8" fill="#c8d7a6" stroke="#334c37" stroke-width="1.2"/>
+    <path d="M25 28q-11-1-10-9 2-5 9-6 3 7 10 7 1 9-9 8z" fill="#d59a46" stroke="#70552f" stroke-width="1.3"/><path d="M22 17q4-5 8-3" fill="none" stroke="#718456" stroke-width="1.4"/>
+    <path d="M38 10h8l2 4v19H37V15z" fill="#82a7ad" stroke="#3f6164" stroke-width="1.4"/><path d="M40 10V6h5v4m-7 10h10" fill="none" stroke="#3f6164" stroke-width="1.3"/>
+    <path d="M5 34l5-8 9 4-3 8H8z" fill="#c16d48" stroke="#754c37" stroke-width="1.2"/><path d="M49 30l5-6 5 5-3 8h-7z" fill="#c9c4b5" stroke="#6d756d" stroke-width="1.2"/><circle cx="31" cy="35" r="3" fill="#d6c39a" stroke="#7d7156" stroke-width="1"/>
+  </symbol>
+  <symbol id="payload-organic" viewBox="0 0 60 42">
+    <path d="M3 26q4-15 17-12 7 11-4 20Q7 37 3 26z" fill="#819766" stroke="#334c37" stroke-width="1.5"/><path d="M12 16q3-9 12-8-2 9-12 12" fill="#afc28d" stroke="#486144" stroke-width="1.3"/>
+    <path d="M26 29q-11-2-9-11 3-6 11-6 4 8 12 9 0 10-14 8z" fill="#dcaa53" stroke="#765a31" stroke-width="1.4"/><path d="M28 14q4-5 8-3" fill="none" stroke="#698253" stroke-width="1.5"/>
+    <circle cx="48" cy="26" r="8" fill="#b96548" stroke="#6e3f33" stroke-width="1.4"/><path d="M46 17q1-5 6-5m-4 5q-5-5-8-1 4 5 8 4" fill="#718a5b" stroke="#486144" stroke-width="1.2"/><circle cx="45" cy="23" r="1" fill="#e7b36b"/>
+  </symbol>
+  <symbol id="payload-inorganic" viewBox="0 0 60 42">
+    <path d="M4 34V14q0-3 4-3h8q4 0 4 3v20z" fill="#7da4ac" stroke="#3f6164" stroke-width="1.4"/><path d="M8 11V6h5v5m-7 11h12" fill="none" stroke="#3f6164" stroke-width="1.3"/>
+    <path d="M25 34V17q0-3 4-3h11q4 0 4 3v17z" fill="#c2c7c0" stroke="#69756d" stroke-width="1.4"/><path d="M27 21h15m-15 5h15" stroke="#8c978c" stroke-width="1.2"/>
+    <path d="M47 34l2-25h9l2 25z" fill="#d4c7a0" stroke="#7b765e" stroke-width="1.3"/><path d="M49 16h9m-9 5h9m-10 5h10" stroke="#a29675" stroke-width="1.2"/>
+  </symbol>
+  <symbol id="payload-organic-chopped" viewBox="0 0 60 42">
+    <path d="M4 13l7-4 5 5-6 5z" fill="#9aad77" stroke="#445b3e" stroke-width="1.1"/><path d="M21 8l6 2-2 7-7-2z" fill="#d6a34d" stroke="#775b32" stroke-width="1.1"/><path d="M39 11l7-4 4 6-7 5z" fill="#718a5b" stroke="#40543b" stroke-width="1.1"/>
+    <path d="M9 27l6-5 6 4-4 7z" fill="#bb7049" stroke="#754936" stroke-width="1.1"/><path d="M26 24l7-4 6 5-5 7z" fill="#829869" stroke="#435b40" stroke-width="1.1"/><path d="M44 26l7-5 5 5-4 7z" fill="#d3aa5d" stroke="#785e36" stroke-width="1.1"/>
+    <circle cx="24" cy="36" r="2.2" fill="#788c62"/><circle cx="56" cy="13" r="2" fill="#b86d47"/><circle cx="4" cy="36" r="2" fill="#cf9d4e"/>
+  </symbol>
+  <symbol id="payload-biochar" viewBox="0 0 60 42">
+    <path d="M5 29l5-9 9-2 5 5-3 10H9z" fill="#29392f" stroke="#101f18" stroke-width="1.2"/><path d="M25 18l8-7 8 4 2 9-9 6-8-3z" fill="#17271e" stroke="#0c1811" stroke-width="1.2"/><path d="M43 29l4-8 8-2 3 8-6 8h-7z" fill="#3a473e" stroke="#17271e" stroke-width="1.2"/>
+    <circle cx="11" cy="12" r="3" fill="#414e45"/><circle cx="32" cy="35" r="2.5" fill="#26362e"/><circle cx="52" cy="12" r="2.5" fill="#293a30"/><path d="M17 15l3-4m17 0 3-5" stroke="#bd7546" stroke-width="1.2" opacity=".75"/>
+  </symbol>
+  <symbol id="payload-rdf" viewBox="0 0 60 42">
+    <path d="M3 12l8-5 6 5-5 7z" fill="#83966f" stroke="#455a42" stroke-width="1.1"/><path d="M23 8l7 2-2 8-8-2z" fill="#bd7549" stroke="#744b38" stroke-width="1.1"/><path d="M41 9l8-4 5 7-7 5z" fill="#7da4aa" stroke="#3f6264" stroke-width="1.1"/>
+    <path d="M8 27l7-6 7 5-5 8z" fill="#d0bd90" stroke="#796c52" stroke-width="1.1"/><path d="M27 24l7-5 6 5-4 8-8-1z" fill="#596c4e" stroke="#374836" stroke-width="1.1"/><path d="M46 26l7-5 5 6-4 8h-7z" fill="#b9c3b7" stroke="#6d7b70" stroke-width="1.1"/>
+    <circle cx="23" cy="13" r="2" fill="#53664a"/><circle cx="39" cy="35" r="2" fill="#bd7549"/><path d="M5 37h49" stroke="#51634f" stroke-width="1.4"/>
+  </symbol>
+</svg>

@@ -2,7 +2,7 @@
 
 ## Local release checks
 
-- PASS: all published HTML pages have one H1, a unique title, description, canonical URL, indexable robots metadata, and the shared favicon.
+- PASS: all canonical HTML pages have one H1, a unique title, description, canonical URL, indexable robots metadata, and the shared favicon; compatibility sources `/produk.html` and `/solusi/tps3r-tpst.html` are noindex and redirect targets.
 - PASS: JSON-LD parses on every page; every graph has a linked publisher, brand, page identity, and breadcrumb where the page uses breadcrumbs. Sitemap XML parses and lists the current canonical URLs, including dedicated landing and evidence pages.
 - PASS: social metadata includes a crawlable image, dimensions, alt text, and a page author; article pages expose a modification date.
 - PASS: `llms.txt` lists every published content route and states the Pyronex I/Pyronex II and sample-level laboratory boundaries without adding unsupported claims.
@@ -10,7 +10,8 @@
 - PASS: `node --check script.js` and `git diff --check`.
 - PASS: the home process map remains the existing SVG/visual component. No raw ASCII flow diagram was introduced.
 - PASS: capacity selector updates the plan label, footprint reference, status text, and WhatsApp draft link. The calculator labels its result as an initial average for incoming material, not final reactor sizing.
-- PASS: the consultation form builds a WhatsApp draft with real line breaks and states that the static site does not store submissions.
+- PASS: the consultation form includes optional email and organic-fraction fields, builds a WhatsApp draft with real line breaks, and states that the static site does not store submissions.
+- PASS: local analytics hooks dispatch non-PII interaction events to `window.dataLayer` and a `pyronex:analytics` event; no external analytics provider is configured.
 - PASS: reduced-motion handling remains enabled for the process-map animation; the homepage fact strip collapses to one column at narrow widths.
 - PASS: contrast checks for primary text, muted text, dark-surface text, and focus treatment meet the applicable WCAG thresholds.
 - TARGET, not yet a pass claim: `PERFORMANCE-BUDGET.md` defines p75 LCP, INP, CLS, JavaScript, and image budgets. Run a repeatable mobile Lighthouse or PageSpeed measurement before reporting results.
@@ -28,7 +29,7 @@ Run after each push to `main`:
 
 1. Confirm every sitemap URL and each clean route returns HTTP 200, including nested insight, solution, landing, evidence, and field-note routes.
 2. Confirm `/robots.txt`, `/sitemap.xml`, and `/assets/favicon.svg` are publicly served.
-3. Confirm `/pyronex-ii`, `/solusi/tps3r`, and `/solusi/tpst` redirect permanently to their canonical pages.
+3. Confirm `/produk`, `/produk.html`, `/solusi/tps3r-tpst`, and `/solusi/tpst` redirect permanently to `/pyronex-ii` or `/solusi/tps3r` as configured; confirm both canonical targets return HTTP 200.
 4. Check the homepage copy, product capacity qualification, FAQ, lab caveat, and contact draft on the deployed domain.
 5. Recheck Search Console URL Inspection and sitemap processing. Submission and crawl signals do not prove indexing or ranking.
 

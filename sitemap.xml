@@ -3,43 +3,64 @@
   <url>
     <loc>https://pyronex.web.id/</loc>
     <lastmod>2026-10-01</lastmod>
-    <image:image><image:loc>https://pyronex.web.id/assets/reactor.webp</image:loc><image:title>Ilustrasi reaktor, pengumpan, dan sistem wet scrubber Pyronex II</image:title></image:image>
-    <image:image><image:loc>https://pyronex.web.id/assets/process.webp</image:loc><image:title>Diagram alur Pyronex II dari pemisahan magnetik dan pengayakan menuju biochar dan cacahan RDF</image:title></image:image>
+    <image:image><image:loc>https://pyronex.web.id/assets/pyronex-ii-reactor.webp</image:loc><image:title>Ilustrasi reaktor, pengumpan, dan sistem wet scrubber Pyronex II</image:title></image:image>
+    <image:image><image:loc>https://pyronex.web.id/assets/pyronex-ii-process-flow.webp</image:loc><image:title>Diagram alur Pyronex II dari pemisahan magnetik dan pengayakan menuju biochar dan cacahan RDF</image:title></image:image>
   </url>
-  <url><loc>https://pyronex.web.id/produk</loc><lastmod>2026-10-01</lastmod>
-    <image:image><image:loc>https://pyronex.web.id/assets/reactor.webp</image:loc><image:title>Ilustrasi rangkaian mesin Pyronex II yang menunjukkan reaktor, hopper, dan wet scrubber</image:title></image:image>
+  <url><loc>https://pyronex.web.id/pyronex-ii</loc><lastmod>2026-10-01</lastmod>
+    <image:image><image:loc>https://pyronex.web.id/assets/pyronex-ii-reactor.webp</image:loc><image:title>Ilustrasi rangkaian mesin Pyronex II yang menunjukkan reaktor, hopper, dan wet scrubber</image:title></image:image>
   </url>
   <url><loc>https://pyronex.web.id/teknologi</loc><lastmod>2026-10-01</lastmod>
-    <image:image><image:loc>https://pyronex.web.id/assets/process.webp</image:loc><image:title>Diagram alur Pyronex II: sampah masuk, pemisah magnetik, pengayak, jalur organik menuju biochar dan jalur anorganik kering menuju cacahan RDF</image:title></image:image>
+    <image:image><image:loc>https://pyronex.web.id/assets/pyronex-ii-process-flow.webp</image:loc><image:title>Diagram alur Pyronex II: sampah masuk, pemisah magnetik, pengayak, jalur organik menuju biochar dan jalur anorganik kering menuju cacahan RDF</image:title></image:image>
+  </url>
+  <url><loc>https://pyronex.web.id/teknologi/pirolisis</loc><lastmod>2026-10-01</lastmod>
+    <image:image><image:loc>https://pyronex.web.id/assets/pyronex-ii-process-flow.webp</image:loc><image:title>Diagram alur pemilahan dan pirolisis tertutup Pyronex II</image:title></image:image>
   </url>
   <url><loc>https://pyronex.web.id/penerapan</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://pyronex.web.id/hasil-uji</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://pyronex.web.id/hasil-uji/emisi-greenlab</loc><lastmod>2026-10-01</lastmod>
-    <image:image><image:loc>https://pyronex.web.id/assets/process.webp</image:loc><image:title>Diagram alur Pyronex II dengan pemisahan material dan pengendalian gas buang</image:title></image:image>
+    <image:image><image:loc>https://pyronex.web.id/assets/pyronex-ii-process-flow.webp</image:loc><image:title>Diagram alur Pyronex II dengan pemisahan material dan pengendalian gas buang</image:title></image:image>
   </url>
   <url><loc>https://pyronex.web.id/hasil-uji/biochar-sucofindo</loc><lastmod>2026-10-01</lastmod>
-    <image:image><image:loc>https://pyronex.web.id/assets/process.webp</image:loc><image:title>Diagram jalur organik Pyronex II menuju biochar</image:title></image:image>
+    <image:image><image:loc>https://pyronex.web.id/assets/pyronex-ii-process-flow.webp</image:loc><image:title>Diagram jalur organik Pyronex II menuju biochar</image:title></image:image>
   </url>
   <url><loc>https://pyronex.web.id/biochar</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://pyronex.web.id/mesin-pengolah-sampah-organik</loc><lastmod>2026-10-01</lastmod>
-    <image:image><image:loc>https://pyronex.web.id/assets/reactor.webp</image:loc><image:title>Ilustrasi rangkaian mesin Pyronex II untuk pengolahan sampah organik</image:title></image:image>
+    <image:image><image:loc>https://pyronex.web.id/assets/pyronex-ii-reactor.webp</image:loc><image:title>Ilustrasi rangkaian mesin Pyronex II untuk pengolahan sampah organik</image:title></image:image>
   </url>
   <url><loc>https://pyronex.web.id/mesin-pirolisis-sampah-organik</loc><lastmod>2026-10-01</lastmod>
-    <image:image><image:loc>https://pyronex.web.id/assets/process.webp</image:loc><image:title>Diagram alur pemilahan dan pirolisis tertutup Pyronex II</image:title></image:image>
+    <image:image><image:loc>https://pyronex.web.id/assets/pyronex-ii-process-flow.webp</image:loc><image:title>Diagram alur pemilahan dan pirolisis tertutup Pyronex II</image:title></image:image>
   </url>
   <url><loc>https://pyronex.web.id/mesin-biochar</loc><lastmod>2026-10-01</lastmod>
-    <image:image><image:loc>https://pyronex.web.id/assets/process.webp</image:loc><image:title>Diagram jalur organik Pyronex II menuju biochar</image:title></image:image>
+    <image:image><image:loc>https://pyronex.web.id/assets/pyronex-ii-process-flow.webp</image:loc><image:title>Diagram jalur organik Pyronex II menuju biochar</image:title></image:image>
   </url>
-  <url><loc>https://pyronex.web.id/solusi/tps3r-tpst</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://pyronex.web.id/solusi/tps3r</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://pyronex.web.id/solusi/pasar</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://pyronex.web.id/solusi/kawasan-industri</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://pyronex.web.id/faq</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://pyronex.web.id/insight</loc><lastmod>2026-10-01</lastmod></url>
+  <url><loc>https://pyronex.web.id/insight/apa-itu-pirolisis-sampah-organik</loc><lastmod>2026-10-01</lastmod>
+    <image:image><image:loc>https://pyronex.web.id/assets/pyronex-ii-process-flow.webp</image:loc><image:title>Diagram alur pemilahan sebelum pirolisis sampah organik</image:title></image:image>
+  </url>
+  <url><loc>https://pyronex.web.id/insight/pirolisis-vs-insinerasi</loc><lastmod>2026-10-01</lastmod>
+    <image:image><image:loc>https://pyronex.web.id/assets/pyronex-ii-reactor.webp</image:loc><image:title>Ilustrasi reaktor tertutup untuk perbandingan proses pirolisis</image:title></image:image>
+  </url>
+  <url><loc>https://pyronex.web.id/insight/apa-itu-biochar</loc><lastmod>2026-10-01</lastmod>
+    <image:image><image:loc>https://pyronex.web.id/assets/pyronex-ii-reactor.webp</image:loc><image:title>Ilustrasi reaktor penghasil biochar dari fraksi organik</image:title></image:image>
+  </url>
+  <url><loc>https://pyronex.web.id/insight/kapasitas-mesin-pengolahan-sampah-1-ton-per-jam</loc><lastmod>2026-10-01</lastmod>
+    <image:image><image:loc>https://pyronex.web.id/assets/pyronex-ii-reactor.webp</image:loc><image:title>Ilustrasi unit Pyronex II untuk pembahasan kapasitas</image:title></image:image>
+  </url>
+  <url><loc>https://pyronex.web.id/insight/sistem-pengolahan-sampah-untuk-tps3r</loc><lastmod>2026-10-01</lastmod>
+    <image:image><image:loc>https://pyronex.web.id/assets/pyronex-ii-process-flow.webp</image:loc><image:title>Diagram alur pengolahan sampah untuk fasilitas TPS3R</image:title></image:image>
+  </url>
   <url><loc>https://pyronex.web.id/insight/pemilahan-sampah-sebelum-pirolisis</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://pyronex.web.id/insight/kadar-air-dan-kesiapan-umpan</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://pyronex.web.id/insight/membaca-hasil-uji-biochar</loc><lastmod>2026-10-01</lastmod></url>
   <url><loc>https://pyronex.web.id/penerapan/tps3r-nitikan</loc><lastmod>2026-10-01</lastmod>
-    <image:image><image:loc>https://pyronex.web.id/assets/process.webp</image:loc><image:title>Diagram alur sistem pengolahan sampah Pyronex</image:title></image:image>
+    <image:image><image:loc>https://pyronex.web.id/assets/pyronex-ii-process-flow.webp</image:loc><image:title>Diagram alur sistem pengolahan sampah Pyronex</image:title></image:image>
+  </url>
+  <url><loc>https://pyronex.web.id/penerapan/tambakboyo</loc><lastmod>2026-10-01</lastmod>
+    <image:image><image:loc>https://pyronex.web.id/assets/pyronex-ii-process-flow.webp</image:loc><image:title>Diagram alur sistem pengolahan sampah Pyronex</image:title></image:image>
   </url>
   <url><loc>https://pyronex.web.id/perusahaan</loc><lastmod>2026-10-01</lastmod></url>
 </urlset>

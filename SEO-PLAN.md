@@ -23,17 +23,32 @@ Google/Bing volumes, trends, paid auction competition, and query-level rankings 
 ## Site and crawler changes
 
 - Crawlable static HTML pages use distinct intent, canonical URLs, unique titles and descriptions, social metadata, descriptive headings, internal links, and page-level schema.
-- Preserve `/produk` as the canonical product URL. Keep existing routes available; add new routes only when they contain complete, useful content.
-- `/pyronex-ii` remains a permanent redirect to `/produk`; `/solusi/tps3r` and `/solusi/tpst` are permanent aliases for `/solusi/tps3r-tpst`. The aliases are not listed in the sitemap.
+- Use `/pyronex-ii` as the canonical product URL. `/produk` and `/produk.html` remain compatibility paths that permanently redirect to it; the redirect targets are not listed in the sitemap. Keep existing routes available only when they contain complete, useful content.
+- Use `/solusi/tps3r` as the canonical combined TPS3R/TPST page. `/solusi/tps3r-tpst` and `/solusi/tpst` permanently redirect to it. `/teknologi/pirolisis` and `/penerapan/tambakboyo` are published supporting pages with their own canonical URLs.
 - Search intent coverage includes product buying, technology research, two Pyronex I field contexts, sample-based test results, company contact, biochar use boundaries, buyer-specific operating questions, and technical reading. The site distinguishes Pyronex I field locations from the Pyronex II product configuration.
 - JSON-LD must describe information visible on the page. Do not add Offer, price, review, rating, or certification markup without matching public evidence; FAQ markup must match the published answers. Organization, product, article, collection, breadcrumb, and image entities use stable identifiers so crawlers can connect the pages without guessing.
 - `sitemap.xml` lists every published, indexable canonical route. Image entries are limited to relevant images that are present in page content. Custom CSS charts visualize lab data; scans of lab report pages are not reproduced.
 - `robots.txt` allows Googlebot, Bingbot, OAI-SearchBot, ChatGPT-User, Claude-SearchBot, Claude-User, GPTBot, ClaudeBot, Google-Extended, PerplexityBot, and Perplexity-User. The user explicitly authorized training crawlers. Search and training crawler controls remain separate where the platform defines them separately.
 - `llms.txt` provides a short, human-readable index of the published pages and claim boundaries for systems that choose to read it. It is supplementary: it does not replace the HTML pages, sitemap, or crawler access rules, and Google does not require it for Search or AI features.
 - In the 23 September 2026 release, IndexNow accepted the then-current six canonical URLs (HTTP 200); the root verification file was served and matched the configured key. A successful submission means discovery notification, not indexing or ranking.
-- On 1 October 2026, IndexNow accepted six new canonical URLs for the search-intent landing, evidence, and TPS3R Nitikan pages. This is a discovery notification, not confirmation of indexing or ranking.
+- On 1 October 2026, IndexNow accepted six new canonical URLs for the search-intent landing, evidence, and TPS3R Nitikan pages. This is a discovery notification, not confirmation of indexing or ranking. The current release adds the canonical product/TPS3R consolidation, a pirolisis technology page, a Tambakboyo field note, and five substantial insight articles; submit those URLs again after deployment.
 - Keep useful, accessible HTML as the source of truth for search and AI retrieval. Keyword stuffing, doorway pages, fake reviews, and unsupported first-in-Indonesia claims are omitted; `llms.txt` only indexes the pages and their existing claim boundaries.
 - `PERFORMANCE-BUDGET.md` records Core Web Vitals and asset-size targets. Until a repeatable mobile Lighthouse or PageSpeed run is stored, those values remain engineering targets rather than pass claims.
+
+
+### Current content-cluster status
+
+- Commercial core: `/pyronex-ii`, `/mesin-pengolah-sampah-organik`, `/mesin-pirolisis-sampah-organik`, `/mesin-biochar`, and the location-specific solution pages.
+- Technical explanation: `/teknologi`, `/teknologi/pirolisis`, and eight insight articles covering separation, moisture, pirolisis, insinerasi, biochar, capacity interpretation, and TPS3R planning.
+- Evidence: `/hasil-uji`, the GreenLab and Sucofindo summaries, and the two Pyronex I field notes.
+- The site does not publish a mass set of thin pages for every keyword variant. Additional pages should wait for a distinct question, source, and useful answer.
+
+### Claim and regulatory boundaries
+
+- [PP 81/2012](https://peraturan.bpk.go.id/Home/Download/35278/PP%20Nomor%2081%20Tahun%202012.pdf) and [Permen PUPR 03/PRT/M/2013](https://jdih.pu.go.id/detail-dokumen/PermenPUPR-nomor-03-tahun-2013-Penyelenggaraan-Prasarana-Dan-Sarana-Persampahan-Dalam-Penanganan-Sampah-Rumah-Tangga-Dan-Sampah-Sejenis-Sampah-Rumah-Tangga) are cited for facility-planning context, not as a statement that a particular configuration is automatically permitted.
+- [Permen LHK 70/2016](https://peraturan.bpk.go.id/Details/168715/permen-lhk-no-70-tahun-2016) is cited for the existence of emission and monitoring requirements. Applicability to a project requires review of feed, equipment, operating conditions, and permits.
+- Wet scrubbers transfer captured material into a liquid stream; the [US EPA guidance](https://www.epa.gov/air-emissions-monitoring-knowledge-base/monitoring-control-technique-wet-scrubber-particulate-0) does not support blanket claims that every emission or odor is removed.
+- Biochar and RDF copy stays sample- and buyer-specific. A lab report is not a batch certification; RDF acceptance depends on the intended off-taker specification.
 
 ## Claim boundary
 
