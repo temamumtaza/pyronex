@@ -47,3 +47,9 @@ The previous six-page release was deployed on 23 September 2026. Its historical 
 - PASS: production HTML fingerprints showed the canonical product title, visible breadcrumb, evidence section, new technology page, Tambakboyo page, and new article pages.
 - PASS: a 1 October 2026 IndexNow batch for nine changed/new canonical URLs returned HTTP 200; this is discovery notification only.
 - LIMITATION: this shell check does not measure mobile LCP, INP, CLS, or submit the Search Console requests that require the verified account.
+
+## Mobile verification on 1 October 2026
+
+- PASS: a 390 × 844 viewport check covered `/`, `/pyronex-ii`, `/teknologi/pirolisis`, `/solusi/tps3r`, and `/insight/apa-itu-pirolisis-sampah-organik`. Each route exposed a page title and H1, and its document width matched the viewport without horizontal overflow.
+- PASS: the mobile header displayed the Pyronex wordmark, breadcrumb, and menu control. Opening the menu exposed the six primary navigation links; the tab was restored to its normal desktop viewport after the check.
+- LIMITATION: this interaction check does not replace a repeatable Lighthouse or PageSpeed run for field LCP, INP, or CLS data.
