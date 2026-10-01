@@ -13,7 +13,7 @@ if (!document.querySelector(`script[src*="${GA4_MEASUREMENT_ID}"]`)) {
 const trackEvent = (name, params = {}) => {
   const detail = { event: name, ...params };
   window.dataLayer.push(detail);
-  window.gtag('event', name, params);
+  if (typeof window.gtag === 'function') window.gtag('event', name, params);
   document.dispatchEvent(new CustomEvent('pyronex:analytics', { detail }));
 };
 
