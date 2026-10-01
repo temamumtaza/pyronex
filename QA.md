@@ -2,8 +2,8 @@
 
 ## Local release checks
 
-- PASS: all 15 published HTML pages have one H1, a unique title, description, canonical URL, indexable robots metadata, and the shared favicon.
-- PASS: JSON-LD parses on every page; every graph has a linked publisher, brand, page identity, and breadcrumb where the page uses breadcrumbs. Sitemap XML parses and lists the 15 current canonical URLs.
+- PASS: all published HTML pages have one H1, a unique title, description, canonical URL, indexable robots metadata, and the shared favicon.
+- PASS: JSON-LD parses on every page; every graph has a linked publisher, brand, page identity, and breadcrumb where the page uses breadcrumbs. Sitemap XML parses and lists the current canonical URLs, including dedicated landing and evidence pages.
 - PASS: social metadata includes a crawlable image, dimensions, alt text, and a page author; article pages expose a modification date.
 - PASS: `llms.txt` lists every published content route and states the Pyronex I/Pyronex II and sample-level laboratory boundaries without adding unsupported claims.
 - PASS: local links, route fragments, scripts, stylesheets, and referenced images resolve. Every content image has descriptive alt text.
@@ -13,6 +13,7 @@
 - PASS: the consultation form builds a WhatsApp draft with real line breaks and states that the static site does not store submissions.
 - PASS: reduced-motion handling remains enabled for the process-map animation; the homepage fact strip collapses to one column at narrow widths.
 - PASS: contrast checks for primary text, muted text, dark-surface text, and focus treatment meet the applicable WCAG thresholds.
+- TARGET, not yet a pass claim: `PERFORMANCE-BUDGET.md` defines p75 LCP, INP, CLS, JavaScript, and image budgets. Run a repeatable mobile Lighthouse or PageSpeed measurement before reporting results.
 
 ## Evidence boundaries
 
@@ -25,9 +26,14 @@
 
 Run after each push to `main`:
 
-1. Confirm every sitemap URL and each clean route returns HTTP 200, including `/insight` and nested insight/solution routes.
+1. Confirm every sitemap URL and each clean route returns HTTP 200, including nested insight, solution, landing, evidence, and field-note routes.
 2. Confirm `/robots.txt`, `/sitemap.xml`, and `/assets/favicon.svg` are publicly served.
-3. Check the homepage copy, product capacity qualification, FAQ, lab caveat, and contact draft on the deployed domain.
-4. Recheck Search Console URL Inspection and sitemap processing. Submission and crawl signals do not prove indexing or ranking.
+3. Confirm `/pyronex-ii`, `/solusi/tps3r`, and `/solusi/tpst` redirect permanently to their canonical pages.
+4. Check the homepage copy, product capacity qualification, FAQ, lab caveat, and contact draft on the deployed domain.
+5. Recheck Search Console URL Inspection and sitemap processing. Submission and crawl signals do not prove indexing or ranking.
+
+## Performance target
+
+`PERFORMANCE-BUDGET.md` records the intended p75 Core Web Vitals and asset budgets. They are targets until a repeatable mobile Lighthouse or PageSpeed run is captured with the URL and date.
 
 The previous six-page release was deployed on 23 September 2026. Its historical Search Console and IndexNow results remain discovery evidence only; they do not describe the expanded release.

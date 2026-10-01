@@ -16,6 +16,6 @@ DNS remains hosted on SumoPod (ns1.sumopod.com / ns2.sumopod.com):
 
 Vercel redirects www to the apex domain with HTTP 308. Domain configuration was verified on 2026-09-23. DNS recommendations can change; consult Vercel before future changes.
 
-SEO research, page intent map, crawler policy, structured data, `llms.txt`, and post-deployment Search Console checks: `SEO-PLAN.md`. Search Console ownership and the IndexNow key are configured; sitemap submission does not guarantee indexing or inclusion in AI answers.
+SEO research, page intent map, crawler policy, structured data, `llms.txt`, performance targets, and post-deployment Search Console checks: `SEO-PLAN.md`. Search Console ownership and the IndexNow key are configured; sitemap submission does not guarantee indexing or inclusion in AI answers. See `PERFORMANCE-BUDGET.md` for targets that still need repeatable mobile measurement.
 
 Source/claim boundaries and visual decisions: `DESIGN.md`. Verification: `QA.md`.

@@ -13,7 +13,12 @@ Pengembang dan mitra rekayasa: PT Kibar Laksana Bintang dan CV Lestari Bumi Semb
 - [Teknologi dan alur proses](https://pyronex.web.id/teknologi): pemilahan awal, jalur organik, pirolisis tertutup, jalur fraksi kering, serta pengendalian lingkungan.
 - [Penerapan Pyronex I](https://pyronex.web.id/penerapan): catatan operasional dari TPS3R Nitikan dan Tambakboyo di D.I. Yogyakarta.
 - [Hasil uji laboratorium](https://pyronex.web.id/hasil-uji): ringkasan uji emisi dan analisis satu sampel biochar beserta batas pembacaannya.
+- [Uji emisi GreenLab](https://pyronex.web.id/hasil-uji/emisi-greenlab): ringkasan parameter sampel Air Emission - Boiler, nilai acuan laporan, dan batas pembacaannya.
+- [Analisis biochar Sucofindo](https://pyronex.web.id/hasil-uji/biochar-sucofindo): ringkasan parameter satu sampel biochar, periode analisis, dan batas kesimpulan.
 - [Biochar](https://pyronex.web.id/biochar): keluaran jalur organik dan hal yang perlu diperiksa sebelum penggunaan tertentu.
+- [Mesin pengolah sampah organik](https://pyronex.web.id/mesin-pengolah-sampah-organik): halaman intent tentang penerimaan, pemilahan, dewatering, dan jalur organik Pyronex II.
+- [Mesin pirolisis sampah organik](https://pyronex.web.id/mesin-pirolisis-sampah-organik): prinsip reaktor tertutup, kesiapan umpan, dan pengendalian gas buang.
+- [Mesin biochar](https://pyronex.web.id/mesin-biochar): jalur pembentukan biochar serta parameter yang perlu diperiksa sebelum penggunaan.
 - [Pertanyaan umum](https://pyronex.web.id/faq): jawaban ringkas tentang sistem, kapasitas, keluaran, catatan lapangan, dan data konsultasi.
 - [Perusahaan dan kontak](https://pyronex.web.id/perusahaan): kerja sama rekayasa serta saluran kontak teknis.
 
@@ -22,6 +27,7 @@ Pengembang dan mitra rekayasa: PT Kibar Laksana Bintang dan CV Lestari Bumi Semb
 - [TPS3R dan TPST](https://pyronex.web.id/solusi/tps3r-tpst): data volume, komposisi, lahan, utilitas, operator, dan jalur keluaran yang perlu diperiksa.
 - [Sampah pasar](https://pyronex.web.id/solusi/pasar): pemetaan organik basah, material kering, kadar air, pemilahan, dan keluaran.
 - [Residu kawasan industri](https://pyronex.web.id/solusi/kawasan-industri): kajian sumber material, batas penerimaan, utilitas, operasi, dan penerima keluaran.
+- [TPS3R Nitikan](https://pyronex.web.id/penerapan/tps3r-nitikan): catatan lokasi Pyronex I tentang sampah organik terpilah dan pengurangan air bebas.
 
 ## Insight teknis
 

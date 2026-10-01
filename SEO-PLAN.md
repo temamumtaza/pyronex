@@ -7,12 +7,14 @@ Updated 1 October 2026. The site uses Indonesian pages for product, technology, 
 | Intent | Phrases | Page coverage |
 | --- | --- | --- |
 | Commercial, primary | mesin pengolah sampah pirolisis; mesin sampah pirolisis | Homepage and product page titles, headings, and descriptions |
-| Commercial, application | mesin pirolisis sampah campuran; mesin pengolah sampah TPS3R | Application page explains the Nitikan and Tambakboyo feed contexts |
+| Commercial, organic feed | mesin pengolah sampah organik; mesin pirolisis sampah organik; mesin biochar | Dedicated intent pages explain the feed boundary, reactor stage, and sample evidence |
+| Commercial, application | mesin pirolisis sampah campuran; mesin pengolah sampah TPS3R | Application page explains the Nitikan and Tambakboyo feed contexts; `/solusi/tps3r` and `/solusi/tpst` redirect to the canonical TPS3R page |
 | Commercial, product | Pyronex II; mesin Pyronex | Product page with source-derived illustration and indicative configuration |
 | Technical research | cara kerja mesin pirolisis sampah; kapasitas mesin pirolisis | Technology and product pages explain stages and conditional capacity |
-| Evidence and trust | hasil uji emisi pirolisis; hasil uji biochar | Lab page reports sample-level data, lab identity, dates, and limitations |
+| Evidence and trust | hasil uji emisi pirolisis; hasil uji biochar | Main lab page plus dedicated GreenLab and Sucofindo summaries report sample-level data, lab identity, dates, and limitations |
 | Biochar | biochar dari sampah organik; hasil pirolisis sampah organik | Biochar page explains the organic process stream and the limits of the available sample tests |
 | Buyer fit | mesin pengolah sampah TPS3R; solusi sampah pasar; pengolahan sampah kawasan industri | Solution pages explain operating considerations for each setting without assuming site suitability |
+| Field evidence | TPS3R Nitikan; Pyronex I Nitikan | Dedicated location page separates the Pyronex I field note from the Pyronex II product page |
 | Common questions | kapasitas Pyronex II; sampah yang dapat diproses; hasil pirolisis | FAQ answers link to the relevant product, technology, application, and test evidence |
 | Technical reading | pemilahan sebelum pirolisis; kadar air umpan pirolisis; membaca hasil uji biochar | Insight index and supporting articles address specific operating and evidence questions |
 
@@ -22,6 +24,7 @@ Google/Bing volumes, trends, paid auction competition, and query-level rankings 
 
 - Crawlable static HTML pages use distinct intent, canonical URLs, unique titles and descriptions, social metadata, descriptive headings, internal links, and page-level schema.
 - Preserve `/produk` as the canonical product URL. Keep existing routes available; add new routes only when they contain complete, useful content.
+- `/pyronex-ii` remains a permanent redirect to `/produk`; `/solusi/tps3r` and `/solusi/tpst` are permanent aliases for `/solusi/tps3r-tpst`. The aliases are not listed in the sitemap.
 - Search intent coverage includes product buying, technology research, two Pyronex I field contexts, sample-based test results, company contact, biochar use boundaries, buyer-specific operating questions, and technical reading. The site distinguishes Pyronex I field locations from the Pyronex II product configuration.
 - JSON-LD must describe information visible on the page. Do not add Offer, price, review, rating, or certification markup without matching public evidence; FAQ markup must match the published answers. Organization, product, article, collection, breadcrumb, and image entities use stable identifiers so crawlers can connect the pages without guessing.
 - `sitemap.xml` lists every published, indexable canonical route. Image entries are limited to relevant images that are present in page content. Custom CSS charts visualize lab data; scans of lab report pages are not reproduced.
@@ -29,6 +32,7 @@ Google/Bing volumes, trends, paid auction competition, and query-level rankings 
 - `llms.txt` provides a short, human-readable index of the published pages and claim boundaries for systems that choose to read it. It is supplementary: it does not replace the HTML pages, sitemap, or crawler access rules, and Google does not require it for Search or AI features.
 - In the 23 September 2026 release, IndexNow accepted the then-current six canonical URLs (HTTP 200); the root verification file was served and matched the configured key. A successful submission means discovery notification, not indexing or ranking.
 - Keep useful, accessible HTML as the source of truth for search and AI retrieval. Keyword stuffing, doorway pages, fake reviews, and unsupported first-in-Indonesia claims are omitted; `llms.txt` only indexes the pages and their existing claim boundaries.
+- `PERFORMANCE-BUDGET.md` records Core Web Vitals and asset-size targets. Until a repeatable mobile Lighthouse or PageSpeed run is stored, those values remain engineering targets rather than pass claims.
 
 ## Claim boundary
 
@@ -45,6 +49,8 @@ Historical check on 23 September 2026: Search Console processed the then-current
 3. Open `https://pyronex.web.id/llms.txt` and confirm the page links resolve and the claim boundaries remain current.
 4. Submit or resubmit the sitemap in Search Console. Use URL Inspection on the homepage and each materially changed or new page; request indexing when appropriate.
 5. Check the Page Indexing report over time for exclusions, canonical mismatches, and crawl errors. Compare impressions and queries after enough data accumulates; do not treat sitemap acceptance or a crawl request as proof of indexing or ranking.
+
+The Search Console submission and URL Inspection steps require access to the verified property. They are not automated by this repository deployment; the account owner must perform them after the production rollout.
 
 ## Authority guidance used
 
