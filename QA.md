@@ -38,3 +38,11 @@ Run after each push to `main`:
 `PERFORMANCE-BUDGET.md` records the intended p75 Core Web Vitals and asset budgets. They are targets until a repeatable mobile Lighthouse or PageSpeed run is captured with the URL and date.
 
 The previous six-page release was deployed on 23 September 2026. Its historical Search Console and IndexNow results remain discovery evidence only; they do not describe the expanded release.
+
+## Production verification after release 45c1f2e
+
+- PASS on 1 October 2026: 28 sitemap URLs returned HTTP 200, including the five new insight routes, `/teknologi/pirolisis`, `/penerapan/tambakboyo`, `/pyronex-ii`, and `/solusi/tps3r`.
+- PASS: `/robots.txt`, `/sitemap.xml`, `/llms.txt`, the renamed responsive image assets, and the process SVG returned HTTP 200.
+- PASS: `/produk` → `/pyronex-ii`, `/solusi/tps3r-tpst` → `/solusi/tps3r`, and `/solusi/tpst` → `/solusi/tps3r` returned permanent 308 redirects. Vercel `cleanUrls` normalizes the legacy `/produk.html` extension to `/produk` before the canonical redirect; the extension path is not in the sitemap.
+- PASS: production HTML fingerprints showed the canonical product title, visible breadcrumb, evidence section, new technology page, Tambakboyo page, and new article pages.
+- LIMITATION: this shell check does not measure mobile LCP, INP, CLS, or submit the Search Console requests that require the verified account.
