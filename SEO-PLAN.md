@@ -23,11 +23,12 @@ Google/Bing volumes, trends, paid auction competition, and query-level rankings 
 - Crawlable static HTML pages use distinct intent, canonical URLs, unique titles and descriptions, social metadata, descriptive headings, internal links, and page-level schema.
 - Preserve `/produk` as the canonical product URL. Keep existing routes available; add new routes only when they contain complete, useful content.
 - Search intent coverage includes product buying, technology research, two Pyronex I field contexts, sample-based test results, company contact, biochar use boundaries, buyer-specific operating questions, and technical reading. The site distinguishes Pyronex I field locations from the Pyronex II product configuration.
-- JSON-LD must describe information visible on the page. Do not add Offer, price, review, rating, or certification markup without matching public evidence; FAQ markup must match the published answers.
+- JSON-LD must describe information visible on the page. Do not add Offer, price, review, rating, or certification markup without matching public evidence; FAQ markup must match the published answers. Organization, product, article, collection, breadcrumb, and image entities use stable identifiers so crawlers can connect the pages without guessing.
 - `sitemap.xml` lists every published, indexable canonical route. Image entries are limited to relevant images that are present in page content. Custom CSS charts visualize lab data; scans of lab report pages are not reproduced.
 - `robots.txt` allows Googlebot, Bingbot, OAI-SearchBot, ChatGPT-User, Claude-SearchBot, Claude-User, GPTBot, ClaudeBot, Google-Extended, PerplexityBot, and Perplexity-User. The user explicitly authorized training crawlers. Search and training crawler controls remain separate where the platform defines them separately.
+- `llms.txt` provides a short, human-readable index of the published pages and claim boundaries for systems that choose to read it. It is supplementary: it does not replace the HTML pages, sitemap, or crawler access rules, and Google does not require it for Search or AI features.
 - In the 23 September 2026 release, IndexNow accepted the then-current six canonical URLs (HTTP 200); the root verification file was served and matched the configured key. A successful submission means discovery notification, not indexing or ranking.
-- Keep useful, accessible HTML as the source of truth for search and AI retrieval. `llms.txt`, keyword stuffing, doorway pages, fake reviews, and unsupported first-in-Indonesia claims are omitted.
+- Keep useful, accessible HTML as the source of truth for search and AI retrieval. Keyword stuffing, doorway pages, fake reviews, and unsupported first-in-Indonesia claims are omitted; `llms.txt` only indexes the pages and their existing claim boundaries.
 
 ## Claim boundary
 
@@ -41,8 +42,9 @@ Historical check on 23 September 2026: Search Console processed the then-current
 
 1. Open `https://pyronex.web.id/sitemap.xml` and confirm that each listed URL is canonical, published, indexable, and returns successfully. Check that removed or redirected URLs are absent.
 2. Open `https://pyronex.web.id/robots.txt` and confirm crawling remains allowed and the sitemap line is present.
-3. Submit or resubmit the sitemap in Search Console. Use URL Inspection on the homepage and each materially changed or new page; request indexing when appropriate.
-4. Check the Page Indexing report over time for exclusions, canonical mismatches, and crawl errors. Compare impressions and queries after enough data accumulates; do not treat sitemap acceptance or a crawl request as proof of indexing or ranking.
+3. Open `https://pyronex.web.id/llms.txt` and confirm the page links resolve and the claim boundaries remain current.
+4. Submit or resubmit the sitemap in Search Console. Use URL Inspection on the homepage and each materially changed or new page; request indexing when appropriate.
+5. Check the Page Indexing report over time for exclusions, canonical mismatches, and crawl errors. Compare impressions and queries after enough data accumulates; do not treat sitemap acceptance or a crawl request as proof of indexing or ranking.
 
 ## Authority guidance used
 

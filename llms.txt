@@ -1,0 +1,45 @@
+# Pyronex
+
+> Pyronex adalah sistem pengolahan sampah terpadu yang memisahkan material, menyiapkan fraksi organik untuk pirolisis tertutup, dan menangani fraksi kering melalui jalur terpisah. Keluaran yang dibahas di situs ini adalah biochar dan cacahan RDF, dengan kecocokan yang bergantung pada karakter material serta rancangan fasilitas.
+
+Situs resmi: https://pyronex.web.id/
+Bahasa utama: Bahasa Indonesia
+Pengembang dan mitra rekayasa: PT Kibar Laksana Bintang dan CV Lestari Bumi Sembada
+
+## Halaman utama
+
+- [Beranda](https://pyronex.web.id/): gambaran sistem, alur material, keluaran, dan data awal untuk pembahasan fasilitas.
+- [Produk Pyronex II](https://pyronex.web.id/produk): konfigurasi unit, komponen utama, pilihan kapasitas nominal, dan data yang perlu disiapkan.
+- [Teknologi dan alur proses](https://pyronex.web.id/teknologi): pemilahan awal, jalur organik, pirolisis tertutup, jalur fraksi kering, serta pengendalian lingkungan.
+- [Penerapan Pyronex I](https://pyronex.web.id/penerapan): catatan operasional dari TPS3R Nitikan dan Tambakboyo di D.I. Yogyakarta.
+- [Hasil uji laboratorium](https://pyronex.web.id/hasil-uji): ringkasan uji emisi dan analisis satu sampel biochar beserta batas pembacaannya.
+- [Biochar](https://pyronex.web.id/biochar): keluaran jalur organik dan hal yang perlu diperiksa sebelum penggunaan tertentu.
+- [Pertanyaan umum](https://pyronex.web.id/faq): jawaban ringkas tentang sistem, kapasitas, keluaran, catatan lapangan, dan data konsultasi.
+- [Perusahaan dan kontak](https://pyronex.web.id/perusahaan): kerja sama rekayasa serta saluran kontak teknis.
+
+## Halaman berdasarkan kebutuhan lokasi
+
+- [TPS3R dan TPST](https://pyronex.web.id/solusi/tps3r-tpst): data volume, komposisi, lahan, utilitas, operator, dan jalur keluaran yang perlu diperiksa.
+- [Sampah pasar](https://pyronex.web.id/solusi/pasar): pemetaan organik basah, material kering, kadar air, pemilahan, dan keluaran.
+- [Residu kawasan industri](https://pyronex.web.id/solusi/kawasan-industri): kajian sumber material, batas penerimaan, utilitas, operasi, dan penerima keluaran.
+
+## Insight teknis
+
+- [Insight teknis](https://pyronex.web.id/insight): daftar catatan tentang alur sampah, kadar air, dan hasil uji biochar.
+- [Pemilahan sebelum pirolisis](https://pyronex.web.id/insight/pemilahan-sampah-sebelum-pirolisis): alasan logam, fraksi organik, dan fraksi kering dipisahkan sejak awal.
+- [Kadar air dan kesiapan umpan](https://pyronex.web.id/insight/kadar-air-dan-kesiapan-umpan): perbedaan sampah masuk, fraksi organik, material terkondisi, dan umpan reaktor.
+- [Membaca hasil uji biochar](https://pyronex.web.id/insight/membaca-hasil-uji-biochar): cara membaca parameter sampel dan batas kesimpulan dari satu laporan laboratorium.
+
+## Batas informasi
+
+- Pyronex I adalah catatan pengalaman operasional. Catatan tersebut menjadi bahan pengembangan Pyronex II dan bukan bukti bahwa Pyronex II sudah beroperasi di lokasi yang sama.
+- Kapasitas Pyronex II yang tercantum di situs adalah kapasitas nominal. Nilai aktual perlu dibahas dari karakter umpan, konfigurasi, utilitas, dan jam operasi.
+- Angka laboratorium berlaku untuk sampel dan kondisi pengujian yang dicantumkan pada laporan. Angka tersebut tidak otomatis menjadi jaminan untuk semua unit atau penggunaan biochar.
+- Kesesuaian RDF, biochar, dan jalur keluaran lain perlu diperiksa bersama kebutuhan penerima serta kondisi material di lokasi.
+
+## Kontak teknis
+
+PT Kibar Laksana Bintang
+Email: kibarlaksanab@gmail.com
+Telepon: +62-812-3644-0576
+Kontak dan formulir: https://pyronex.web.id/perusahaan#kontak

@@ -3,7 +3,9 @@
 ## Local release checks
 
 - PASS: all 15 published HTML pages have one H1, a unique title, description, canonical URL, indexable robots metadata, and the shared favicon.
-- PASS: JSON-LD parses on every page; sitemap XML parses and lists the 15 current canonical URLs.
+- PASS: JSON-LD parses on every page; every graph has a linked publisher, brand, page identity, and breadcrumb where the page uses breadcrumbs. Sitemap XML parses and lists the 15 current canonical URLs.
+- PASS: social metadata includes a crawlable image, dimensions, alt text, and a page author; article pages expose a modification date.
+- PASS: `llms.txt` lists every published content route and states the Pyronex I/Pyronex II and sample-level laboratory boundaries without adding unsupported claims.
 - PASS: local links, route fragments, scripts, stylesheets, and referenced images resolve. Every content image has descriptive alt text.
 - PASS: `node --check script.js` and `git diff --check`.
 - PASS: the home process map remains the existing SVG/visual component. No raw ASCII flow diagram was introduced.
