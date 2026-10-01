@@ -2,7 +2,7 @@
 
 Production: https://pyronex.web.id
 
-Multi-page Indonesian product website for Pyronex. Pages cover the product configuration, pyrolysis process, Pyronex I field applications, laboratory results, and the companies developing the system. Serve locally with `python3 -m http.server 4173`. No framework or package installation is required.
+Multi-page Indonesian product website for Pyronex. Pages cover Pyronex II, the process, Pyronex I field applications, laboratory results, biochar, buyer-specific solutions, frequently asked questions, technical articles, and the companies developing the system. Serve locally with `python3 -m http.server 4173`. No framework or package installation is required.
 
 GitHub `temamumtaza/pyronex`, branch `main`, is connected to Vercel project `pyronex` in `temamumtazas-projects`. Pushes to main trigger production deployments.
 
@@ -16,6 +16,6 @@ DNS remains hosted on SumoPod (ns1.sumopod.com / ns2.sumopod.com):
 
 Vercel redirects www to the apex domain with HTTP 308. Domain configuration was verified on 2026-09-23. DNS recommendations can change; consult Vercel before future changes.
 
-SEO research, page intent map, crawler policy, and indexing status: `SEO-PLAN.md`. Search Console ownership and the IndexNow key are configured; indexing is not guaranteed. Sitemap lists all six canonical HTML pages.
+SEO research, page intent map, crawler policy, and post-deployment Search Console checks: `SEO-PLAN.md`. Search Console ownership and the IndexNow key are configured; sitemap submission does not guarantee indexing.
 
 Source/claim boundaries and visual decisions: `DESIGN.md`. Verification: `QA.md`.

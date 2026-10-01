@@ -1,28 +1,78 @@
 const menu = document.querySelector('.menu');
 const nav = document.querySelector('#nav');
+// Commercial pricing remains off the public site until the business team enables it.
+const SHOW_PUBLIC_PRICE = false;
+document.querySelectorAll('[data-public-price]').forEach(element => { element.hidden = !SHOW_PUBLIC_PRICE; });
 function closeMenu(returnFocus = false) {
+  if (!menu || !nav) return;
   nav.classList.remove('open');
   menu.setAttribute('aria-expanded', 'false');
-  menu.querySelector('span').textContent = '+';
+  const indicator = menu.querySelector('span');
+  if (indicator) indicator.textContent = '+';
   if (returnFocus) menu.focus();
 }
-menu.addEventListener('click', () => {
-  const open = menu.getAttribute('aria-expanded') !== 'true';
-  menu.setAttribute('aria-expanded', String(open));
-  menu.querySelector('span').textContent = open ? '−' : '+';
-  nav.classList.toggle('open', open);
-});
-nav.addEventListener('click', event => { if (event.target.closest('a')) closeMenu(); });
-document.addEventListener('keydown', event => { if (event.key === 'Escape' && nav.classList.contains('open')) closeMenu(true); });
+if (menu && nav) {
+  menu.addEventListener('click', () => {
+    const open = menu.getAttribute('aria-expanded') !== 'true';
+    menu.setAttribute('aria-expanded', String(open));
+    const indicator = menu.querySelector('span');
+    if (indicator) indicator.textContent = open ? '−' : '+';
+    nav.classList.toggle('open', open);
+  });
+  nav.addEventListener('click', event => { if (event.target.closest('a')) closeMenu(); });
+  document.addEventListener('keydown', event => { if (event.key === 'Escape' && nav.classList.contains('open')) closeMenu(true); });
+}
 const areas = { 1: '5 × 5 m', 2: '7 × 7 m', 4: '5 × 10 m', 8: '5 × 20 m' };
 document.querySelectorAll('[data-capacity]').forEach(button => {
   button.addEventListener('click', () => {
     const capacity = button.dataset.capacity;
     document.querySelectorAll('[data-capacity]').forEach(item => item.setAttribute('aria-pressed', String(item === button)));
-    document.querySelector('#capacity-title').textContent = `${capacity} ton per hari`;
-    document.querySelector('#capacity-area').textContent = areas[capacity];
-    document.querySelector('#capacity-cta').href = `https://wa.me/6281236440576?text=${encodeURIComponent(`Halo, saya ingin membahas kapasitas Pyronex ${capacity} ton per hari.`)}`;
+    const title = document.querySelector('#capacity-title');
+    const area = document.querySelector('#capacity-area');
+    const cta = document.querySelector('#capacity-cta');
+    if (title) title.textContent = `${capacity} ton per hari`;
+    if (area) area.textContent = areas[capacity];
+    if (cta) cta.href = `https://wa.me/6281236440576?text=${encodeURIComponent(`Halo, saya ingin membahas kapasitas Pyronex ${capacity} ton per hari.`)}`;
+    const status = document.querySelector('[data-capacity-status]');
+    if (status) status.textContent = `Pilihan ${capacity} ton per hari dipilih.`;
   });
+});
+
+document.querySelectorAll('[data-lead-form]').forEach(form => {
+  form.addEventListener('submit', event => {
+    event.preventDefault();
+    const values = Object.fromEntries(new FormData(form).entries());
+    const lines = [
+      'Halo, saya ingin berkonsultasi tentang Pyronex II.',
+      values.name && `Nama: ${values.name}`,
+      values.organization && `Organisasi: ${values.organization}`,
+      values.phone && `Kontak: ${values.phone}`,
+      values.location && `Lokasi: ${values.location}`,
+      values.facility && `Jenis fasilitas: ${values.facility}`,
+      values.volume && `Volume: ${values.volume}`,
+      values.message && `Catatan: ${values.message}`,
+    ].filter(Boolean);
+    window.open(`https://wa.me/6281236440576?text=${encodeURIComponent(lines.join('\n'))}`, '_blank', 'noopener');
+  });
+});
+
+document.querySelectorAll('[data-capacity-calculator]').forEach(calculator => {
+  const daily = calculator.querySelector('[name="daily-tonnage"]');
+  const hours = calculator.querySelector('[name="operating-hours"]');
+  const output = calculator.querySelector('[data-capacity-result]');
+  if (!daily || !hours || !output) return;
+  const update = () => {
+    const tonnage = Number(daily.value);
+    const operatingHours = Number(hours.value);
+    if (!tonnage || !operatingHours || tonnage < 0 || operatingHours <= 0) {
+      output.textContent = 'Masukkan volume harian dan jam operasi untuk melihat perkiraan awal.';
+      return;
+    }
+    output.textContent = `Perkiraan laju rata-rata: ${(tonnage / operatingHours).toFixed(2)} ton/jam. Ini bukan penentuan ukuran akhir; konfigurasi perlu karakterisasi umpan dan survei rekayasa.`;
+  };
+  daily.addEventListener('input', update);
+  hours.addEventListener('input', update);
+  update();
 });
 const processFlows = document.querySelectorAll('[data-process-flow]');
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
