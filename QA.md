@@ -53,3 +53,10 @@ The previous six-page release was deployed on 23 September 2026. Its historical 
 - PASS: a 390 × 844 viewport check covered `/`, `/pyronex-ii`, `/teknologi/pirolisis`, `/solusi/tps3r`, and `/insight/apa-itu-pirolisis-sampah-organik`. Each route exposed a page title and H1, and its document width matched the viewport without horizontal overflow.
 - PASS: the mobile header displayed the Pyronex wordmark, breadcrumb, and menu control. Opening the menu exposed the six primary navigation links; the tab was restored to its normal desktop viewport after the check.
 - LIMITATION: this interaction check does not replace a repeatable Lighthouse or PageSpeed run for field LCP, INP, or CLS data.
+
+## Search Console and GA4 account actions on 1 October 2026
+
+- PASS: the verified `pyronex.web.id` Search Console property accepted a new submission of `https://pyronex.web.id/sitemap.xml`.
+- PASS: URL Inspection confirmed the homepage is indexed. Priority crawl requests were accepted for `/pyronex-ii`, `/teknologi/pirolisis`, and `/solusi/tps3r`; acceptance places URLs in Google's crawl queue and does not guarantee immediate indexing or ranking.
+- PASS: a GA4 property named `Pyronex` and web stream `Pyronex Web` were created with Jakarta time, Indonesian rupiah, and Measurement ID `G-KXFM4N6ZRB`. The static site now loads the Google tag and forwards its existing non-PII interaction events.
+- LIMITATION: GA4 reported that collection can take up to 48 hours to appear. Search Console crawl and indexing status also remain asynchronous.
