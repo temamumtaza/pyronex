@@ -1,7 +1,19 @@
+const GA4_MEASUREMENT_ID = 'G-KXFM4N6ZRB';
+window.dataLayer = window.dataLayer || [];
+window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+window.gtag('js', new Date());
+window.gtag('config', GA4_MEASUREMENT_ID, { anonymize_ip: true });
+if (!document.querySelector(`script[src*="${GA4_MEASUREMENT_ID}"]`)) {
+  const gaScript = document.createElement('script');
+  gaScript.async = true;
+  gaScript.src = `https://www.googletagmanager.com/gtag/js?id=${GA4_MEASUREMENT_ID}`;
+  document.head.appendChild(gaScript);
+}
+
 const trackEvent = (name, params = {}) => {
   const detail = { event: name, ...params };
-  window.dataLayer = window.dataLayer || [];
   window.dataLayer.push(detail);
+  window.gtag('event', name, params);
   document.dispatchEvent(new CustomEvent('pyronex:analytics', { detail }));
 };
 

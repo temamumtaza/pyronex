@@ -11,7 +11,7 @@
 - PASS: the home process map remains the existing SVG/visual component. No raw ASCII flow diagram was introduced.
 - PASS: capacity selector updates the plan label, footprint reference, status text, and WhatsApp draft link. The calculator labels its result as an initial average for incoming material, not final reactor sizing.
 - PASS: the consultation form includes optional email and organic-fraction fields, builds a WhatsApp draft with real line breaks, and states that the static site does not store submissions.
-- PASS: local analytics hooks dispatch non-PII interaction events to `window.dataLayer` and a `pyronex:analytics` event; no external analytics provider is configured.
+- PASS: GA4 property `Pyronex` and web stream `Pyronex Web` are configured with Measurement ID `G-KXFM4N6ZRB`; the site sends page views and the existing non-PII interaction events while retaining the local `window.dataLayer` and `pyronex:analytics` hooks.
 - PASS: reduced-motion handling remains enabled for the process-map animation; the homepage fact strip collapses to one column at narrow widths.
 - PASS: contrast checks for primary text, muted text, dark-surface text, and focus treatment meet the applicable WCAG thresholds.
 - TARGET, not yet a pass claim: `PERFORMANCE-BUDGET.md` defines p75 LCP, INP, CLS, JavaScript, and image budgets. Run a repeatable mobile Lighthouse or PageSpeed measurement before reporting results.
